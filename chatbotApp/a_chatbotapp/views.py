@@ -29,10 +29,6 @@ class AddView(View):
         print("Num01", num01)
         return HttpResponse(num01 + num02)
 
-class SubView(View):
-    def post(self, request, *args, **kwargs):
-        if not authenticate(request.headers['Authentication'])
-
 
 def home(request):
     return render(request, 'home.html')
